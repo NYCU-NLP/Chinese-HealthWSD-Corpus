@@ -1,7 +1,7 @@
 # Chinese HealthWSD Corpus
 Chinese Healthcare Word Sense Disambiguation (HealthWSD) Corpus is collected and annotated by NYCU NLP Lab ([https://ainlp.tw/](https://ainlp.tw/)).
 
-We first selected named entities in the [Chinese HealthNER corpus](https://github.com/NCUEE-NLPLab/Chinese-HealthNER-Corpus) (Lee and Lu, 2021) with coverage across 10 entity types (body, symptom, instrument, examinations, chemical, disease, drug, supplement, treatment and time) as seed entities to search the BabelNet version 5.0, a multilingual encyclopedic lexicon that contains named entities in a large network of semantic relations. A total of 735 distinct named entities contains at least two semantically different glosses in BabelNet. After manual checking, we selected 40 nouns as target biomedical entities that do not contain unclear or specific glosses such as names for creative works, author names and so on.
+We first selected named entities in the [Chinese HealthNER corpus](https://github.com/NYCU-NLP/Chinese-HealthNER-Corpus) (Lee and Lu, 2021) with coverage across 10 entity types (body, symptom, instrument, examinations, chemical, disease, drug, supplement, treatment and time) as seed entities to search the BabelNet version 5.0, a multilingual encyclopedic lexicon that contains named entities in a large network of semantic relations. A total of 735 distinct named entities contains at least two semantically different glosses in BabelNet. After manual checking, we selected 40 nouns as target biomedical entities that do not contain unclear or specific glosses such as names for creative works, author names and so on.
 
 We use these 40 distinct words as seed query terms to search and retrieve results containing sentences with target named entities. To efficiently and accurately crawl sentences consisting of ambiguous target words with different glosses, we manually allocated gloss-related keywords along with target words as queries which were automatically input into the Google search engine to obtain appropriate search results. We then crawled the corresponding web pages, removed all HTML tags, images, videos and embedded web advertisements, split the remaining texts into sentences, and retained sentences containing at least one target entity word for manual annotation.
 
@@ -54,16 +54,16 @@ Through this process, we created the Chinese HealthWSD corpus that can be used f
 
 For more information please refer to our ACM TALLIP Paper: https://doi.org/10.1145/3638555
 
-Tzu-Mi Lin, Man-Chen Hung, and Lung-Hao Lee (2024). Leveraging Daul Gloss Encoders in Chinese Biomedical Entity Linking. *ACM Transactions on Asian and Low-Resource Language Information Processing*. (accepted for publication).[https://doi.org/10.1145/3638555](https://doi.org/10.1145/3638555)
+Tzu-Mi Lin, Man-Chen Hung, and Lung-Hao Lee (2024). Leveraging Daul Gloss Encoders in Chinese Biomedical Entity Linking. *ACM Transactions on Asian and Low-Resource Language Information Processing*, 23(2), Article 28, 1-15.[https://doi.org/10.1145/3638555](https://doi.org/10.1145/3638555)
 
 @ARTICLE{Lin-ACMTALLIP-2024,<br>
 &emsp;&emsp;&emsp;&emsp;author  = {Tzu-Mi Lin, Man-Chen Hung, and Lung-Hao Lee},<br>
 &emsp;&emsp;&emsp;&emsp;title   = {Leveraging Daul Gloss Encoders in Chinese Biomedical Entity Linking},<br>
 &emsp;&emsp;&emsp;&emsp;journal = {ACM Transactions on Asian and Low-Resource Language Information Processing},<br>
-&emsp;&emsp;&emsp;&emsp;volume  = ,<br>
-&emsp;&emsp;&emsp;&emsp;number  = ,<br>
-&emsp;&emsp;&emsp;&emsp;pages   = {},<br>
-&emsp;&emsp;&emsp;&emsp;month   = ,<br>
+&emsp;&emsp;&emsp;&emsp;volume  = {23},<br>
+&emsp;&emsp;&emsp;&emsp;number  = {2},<br>
+&emsp;&emsp;&emsp;&emsp;pages   = {1-15},<br>
+&emsp;&emsp;&emsp;&emsp;month   = feb,<br>
 &emsp;&emsp;&emsp;&emsp;year    = 2024,<br>
 &emsp;&emsp;&emsp;&emsp;url     = { https://doi.org/10.1145/3638555 }<br>
 }   
